@@ -28,7 +28,7 @@ permissions:
 
 jobs:
   prepare:
-    runs-on: windows-latest
+    runs-on: windows-2019
     timeout-minutes: 15
 
     env:
@@ -60,7 +60,7 @@ jobs:
           ref: ${{ env.branch }}
 
       - name: add msbuild to PATH
-        uses: microsoft/setup-msbuild@v1.1
+        uses: microsoft/setup-msbuild@v2
         with:
           msbuild-architecture: x64
 
