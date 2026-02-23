@@ -28,7 +28,7 @@ permissions:
 
 jobs:
   prepare:
-    runs-on: windows-2019
+    runs-on: windows-latest
     timeout-minutes: 15
 
     env:
